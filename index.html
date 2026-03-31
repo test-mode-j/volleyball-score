@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>バレーボール スコアカウンター</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🏐 バレーボール スコアカウンター</h1>
+
+    <div class="scoreboard">
+      <div class="team">
+        <h2>チームA</h2>
+        <div class="score" id="scoreA">0</div>
+        <button onclick="addScore('A')">+1点</button>
+        <button onclick="undoScore('A')">−1点</button>
+      </div>
+
+      <div class="set-score">
+        <p>セット数</p>
+        <p id="setA">0</p>
+        :
+        <p id="setB">0</p>
+      </div>
+
+      <div class="team">
+        <h2>チームB</h2>
+        <div class="score" id="scoreB">0</div>
+        <button onclick="addScore('B')">+1点</button>
+        <button onclick="undoScore('B')">−1点</button>
+      </div>
+    </div>
+
+    <button class="reset-btn" onclick="resetSet()">セットリセット</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
